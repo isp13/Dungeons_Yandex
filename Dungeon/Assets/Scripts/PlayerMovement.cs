@@ -40,7 +40,16 @@ public class PlayerMovement : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-        
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            anim.speed = 2;
+            moveSpeed = 30;
+        }
+        else
+        {
+            anim.speed = 1;
+            moveSpeed = 16;
+        }
 		if (Input.GetKey (KeyCode.D)) {
             anim.enabled = true;
             animation_name = "Right";
