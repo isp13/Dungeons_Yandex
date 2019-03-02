@@ -42,22 +42,25 @@ public class PlayerMovement : MonoBehaviour
 	{
         
 		if (Input.GetKey (KeyCode.D)) {
-            
+            anim.enabled = true;
             animation_name = "Right";
             player_horizontal = 0.5f;
         }
         if (Input.GetKey (KeyCode.A))
         {
+            anim.enabled = true;
             animation_name = "Left";
             player_horizontal = -0.5f;
         }
         if (Input.GetKey (KeyCode.W))
         {
+            anim.enabled = true;
             animation_name = "Up";
             player_vertical = 0.5f;
         }
         if (Input.GetKey (KeyCode.S))
         {
+            anim.enabled = true;
             animation_name = "Down";
             player_vertical = -0.5f;
         }
@@ -65,6 +68,7 @@ public class PlayerMovement : MonoBehaviour
         {
             player_vertical = 0.0f;
             player_horizontal = 0.0f;
+            anim.enabled = false;
         }
 		rb2d.velocity = new Vector2(Mathf.Lerp(0, player_horizontal* moveSpeed, 0.8f),
 			Mathf.Lerp(0, player_vertical* moveSpeed, 0.8f));
