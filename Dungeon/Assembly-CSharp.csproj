@@ -55,6 +55,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\CompleteCameraController.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\SmoothCamera.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>/Users/nikita/Desktop/Dungeons/Dungeons_Yandex/Dungeon/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
