@@ -221,8 +221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d78d5bba6f69146ad8f365954ed6a75c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1409725259}
-  smoothTime: 0.1
+  player: {fileID: 1409725257}
 --- !u!1 &548897781
 GameObject:
   m_ObjectHideFlags: 0
@@ -773,7 +772,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 807a656c575cc4c3bad938393d7ad487, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 8
+  moveSpeed: 4
 --- !u!95 &1409725261
 Animator:
   serializedVersion: 3
