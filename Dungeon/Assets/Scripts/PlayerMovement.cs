@@ -73,6 +73,18 @@ public class PlayerMovement : MonoBehaviour
             animation_name = "Down";
             player_vertical = -0.5f;
         }
+
+        if (    (player_horizontal==0.5f  && Input.GetKey (KeyCode.D) ==false) || (player_horizontal==-0.5f  && Input.GetKey (KeyCode.A) ==false)
+        {
+            player_horizontal = 0f;
+        }
+        if (    (player_vertical==0.5f  && Input.GetKey (KeyCode.W) ==false) || (player_vertical==-0.5f  && Input.GetKey (KeyCode.S) ==false)
+        {
+            player_vertical = 0f;
+        }
+
+
+
         if (Input.GetKey (KeyCode.D) == false && Input.GetKey (KeyCode.A)==false && Input.GetKey (KeyCode.W)==false && Input.GetKey (KeyCode.S)==false)
         {
             player_vertical = 0.0f;
