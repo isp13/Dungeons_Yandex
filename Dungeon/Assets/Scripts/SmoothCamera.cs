@@ -4,24 +4,12 @@ using UnityEngine;
 
 public class SmoothCamera : MonoBehaviour
 {
-    public Transform target;
-    public float smoothTime = 0.3F;
-    private Vector3 velocity = Vector3.zero;
-    private Vector3 offset; 
-    void LateUpdate()
-    {
-        offset = transform.position - target.transform.position;
-        // Define a target position above and behind the target transform
-        Vector3 targetPosition = target.TransformPoint(new Vector3(0, 0, -10));
-
-        // Smoothly move the camera towards that target position
-        if (Input.GetKey (KeyCode.D) == false && Input.GetKey (KeyCode.A)==false && Input.GetKey (KeyCode.W)==false && Input.GetKey (KeyCode.S)==false)
-        {
-            transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
-        }
-        else
-        {
-            transform.position = target.transform.position + offset;
-        }
+    public GameObject player;
+    private float helpCameraFollowFaster = 3;
+   
+    void FixedUpdate () {
+        this.transform.position = new Vector3 (Mathf.Lerp(this.transform.position.x, player.transform.position.x, Time.deltaTime*helpCameraFollowFaster),
+        Mathf.Lerp(this.transform.position.y, player.transform.position.y, Time.deltaTime*helpCameraFollowFaster),0);
+        this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, -10);                                 
     }
 }
