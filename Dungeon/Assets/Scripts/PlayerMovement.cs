@@ -74,11 +74,11 @@ public class PlayerMovement : MonoBehaviour
             player_vertical = -0.5f;
         }
 
-        if (    (player_horizontal==0.5f  && Input.GetKey (KeyCode.D) ==false) || (player_horizontal==-0.5f  && Input.GetKey (KeyCode.A) ==false)
+        if (    (player_horizontal==0.5f  && Input.GetKey (KeyCode.D) ==false) || (player_horizontal==-0.5f  && Input.GetKey (KeyCode.A) ==false))
         {
             player_horizontal = 0f;
         }
-        if (    (player_vertical==0.5f  && Input.GetKey (KeyCode.W) ==false) || (player_vertical==-0.5f  && Input.GetKey (KeyCode.S) ==false)
+        if (    (player_vertical==0.5f  && Input.GetKey (KeyCode.W) ==false) || (player_vertical==-0.5f  && Input.GetKey (KeyCode.S) ==false))
         {
             player_vertical = 0f;
         }
