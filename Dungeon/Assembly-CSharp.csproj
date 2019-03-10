@@ -57,6 +57,28 @@
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\SmoothCamera.cs" />
      <Compile Include="Assets\Scripts\Tile_Generate.cs" />
+     <Compile Include="Assets\SFSoftShadows\SFLight.cs" />
+     <Compile Include="Assets\SFSoftShadows\SFPolygon.cs" />
+     <Compile Include="Assets\SFSoftShadows\SFRenderer.cs" />
+     <Compile Include="Assets\SFSoftShadows\SFSample.cs" />
+     <Compile Include="Assets\SFSoftShadows\SFSoftShadowDemos\AsteroidsDemo\Asteroid.cs" />
+     <Compile Include="Assets\SFSoftShadows\SFSoftShadowDemos\AsteroidsDemo\AsteroidBullet.cs" />
+     <Compile Include="Assets\SFSoftShadows\SFSoftShadowDemos\AsteroidsDemo\AsteroidPlayer.cs" />
+     <Compile Include="Assets\SFSoftShadows\SFSoftShadowDemos\AsteroidsDemo\SimpleAnimation.cs" />
+     <Compile Include="Assets\SFSoftShadows\SFSoftShadowDemos\AsteroidsDemo\WarningLinearColorSpace.cs" />
+     <Compile Include="Assets\SFSoftShadows\SFSoftShadowDemos\CaveScene\MoonMan.cs" />
+     <Compile Include="Assets\SFSoftShadows\SFSoftShadowDemos\CaveScene\ParticleSystems\Scripts\ParticleSystemMultiplier.cs" />
+     <Compile Include="Assets\SFSoftShadows\SFSoftShadowDemos\CaveScene\ParticleSystems\Scripts\SmokeParticles.cs" />
+     <Compile Include="Assets\SFSoftShadows\SFSoftShadowDemos\ForestArtwork-Kenney\ExtendShadows.cs" />
+     <Compile Include="Assets\SFSoftShadows\SFSoftShadowDemos\ForestArtwork-Kenney\FlickerLight.cs" />
+     <Compile Include="Assets\SFSoftShadows\SFSoftShadowDemos\SpaceSpritesAndPrefabs\Spinner.cs" />
+     <None Include="Assets\SFSoftShadows\Resources\SFShadowMask.shader" />
+     <None Include="Assets\SFSoftShadows\Resources\SFLightBlendLinear.shader" />
+     <None Include="Assets\SFSoftShadows\Resources\SFSoftShadow.shader" />
+     <None Include="Assets\SFSoftShadows\Resources\SFLightBlendSoft.shader" />
+     <None Include="Assets\SFSoftShadows\Resources\SFFogLayer.shader" />
+     <None Include="Assets\SFSoftShadows\Changelog.txt" />
+     <None Include="Assets\SFSoftShadows\Resources\SFHDRClamp.shader" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>/Users/nikita/Desktop/Dungeons/Dungeons_Yandex/Dungeon/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
