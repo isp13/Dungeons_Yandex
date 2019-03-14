@@ -54,9 +54,9 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\CompleteCameraController.cs" />
+     <Compile Include="Assets\Scripts\MapGenerator.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\SmoothCamera.cs" />
-     <Compile Include="Assets\Scripts\Tile_Generate.cs" />
      <Compile Include="Assets\SFSoftShadows\SFLight.cs" />
      <Compile Include="Assets\SFSoftShadows\SFPolygon.cs" />
      <Compile Include="Assets\SFSoftShadows\SFRenderer.cs" />
