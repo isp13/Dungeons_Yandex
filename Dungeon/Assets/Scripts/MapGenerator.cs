@@ -11,31 +11,43 @@ public class MapGenerator : MonoBehaviour
     public Tilemap tilemap;
     public Tile floor;
     
-
-
-    private void FixedUpdate()
+    Program method = new Program();
+    public int current_room_x=0;
+    public int current_room_y=0;
+    private void LateUpdate()
     {
-        if (Input.GetKey(KeyCode.LeftShift))
-        {
-            int a  = 1;
-        }
-            
+
+       form_current_room();
     }
 
     void Start()
     {
-        Program method = new Program();
-        method.create_suitable_labyrinth(20, 25);
-
-        for (int i=0;i<method.get_length();++i)
-        {
-            for (int j=0;j<method.get_length();++j)
-                {
-                    Debug.Log(method.print_room(i,j).x);
-                }
-        }
-
         
+        method.create_suitable_labyrinth(20, 25);
+        current_room_x = method.get_length()/2;
+        current_room_y = method.get_length()/2;
+        
+        
+        
+    }
+
+    public void form_current_room()
+    {
+        Program.room_point room = method.rooms[current_room_x,current_room_y];
+        int length = Math.Abs(room.rx2 - room.rx1);
+        int height = Math.Abs(room.ry2 - room.ry1);
+        Debug.Log("length");
+        Debug.Log(length);
+        Debug.Log("height");
+        Debug.Log(height);
+
+        System.Random rand = new System.Random();
+        int rnd = rand.Next(1,100);
+        // 1-35  - rectangle room
+        // 36-55 - rectangle room with column in the middle
+        // 56-75 - corner room (triangle)
+        // 76-99 - random shit
+
     }
     void func(int[,] map)
     {
@@ -148,6 +160,7 @@ class Program
  
     public void create_labyrinth(int i, int j)
     {
+        
         rooms[i, j].drawn = 1;
         rooms[i, j].rx1 = -room_size_random();
         rooms[i, j].ry1 = -room_size_random();
@@ -348,6 +361,7 @@ class Program
  
     public void create_suitable_labyrinth(int min_rooms, int max_rooms)
     {
+        Debug.Log("Creating labyrinth...");
         int not_ok = 1;
         while (Convert.ToBoolean(not_ok))
         {
@@ -510,8 +524,7 @@ class Program
  
     static void Main()
     {
-        Program method = new Program();
-        method.create_suitable_labyrinth(20, 25);
+        
         
         
     }

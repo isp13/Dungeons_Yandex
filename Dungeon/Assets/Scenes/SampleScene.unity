@@ -1156,7 +1156,6 @@ GameObject:
   - component: {fileID: 1409725260}
   - component: {fileID: 1409725262}
   - component: {fileID: 1409725259}
-  - component: {fileID: 1409725264}
   - component: {fileID: 1409725265}
   - component: {fileID: 1409725266}
   m_Layer: 0
@@ -1319,20 +1318,6 @@ RectTransform:
   m_AnchoredPosition: {x: -0.051, y: 0}
   m_SizeDelta: {x: 0.29, y: 0.31}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1409725264
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1409725257}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de873b5c29c586542895ee3877c7f6f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tilemap: {fileID: 2082076386}
-  floor: {fileID: 0}
 --- !u!61 &1409725265
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1373,6 +1358,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tilemap: {fileID: 2082076386}
   floor: {fileID: 11400000, guid: 4d3be2f4f94922a4189c534acf635f1d, type: 2}
+  current_room_x: 0
+  current_room_y: 0
 --- !u!1 &1529116324
 GameObject:
   m_ObjectHideFlags: 0
