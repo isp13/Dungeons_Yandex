@@ -17,7 +17,7 @@ public class MapGenerator : MonoBehaviour
     private void LateUpdate()
     {
 
-       form_current_room();
+       
     }
 
     void Start()
@@ -27,7 +27,7 @@ public class MapGenerator : MonoBehaviour
         current_room_x = method.get_length()/2;
         current_room_y = method.get_length()/2;
         
-        
+        form_current_room();
         
     }
 
@@ -40,6 +40,17 @@ public class MapGenerator : MonoBehaviour
         Debug.Log(length);
         Debug.Log("height");
         Debug.Log(height);
+
+
+        for (int y = 0; y < height/10; ++y)
+        {
+            Debug.Log(y);
+            for (int x = 0; x < length/10; ++x)
+            {
+                //tilemap.SetTile(new Vector3Int(y, x, 0), floor);
+                
+            }
+        }
 
         System.Random rand = new System.Random();
         int rnd = rand.Next(1,100);
