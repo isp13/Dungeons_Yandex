@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
     string animation_name = "";
     float player_horizontal = 0.0f;
     float player_vertical = 0.0f;
-
+    public GameObject players_lighting;
 	// Use this for initialization
 	void Start () {
 		
@@ -40,6 +40,15 @@ public class PlayerMovement : MonoBehaviour
 	// Update is called once per frame
 	void FixedUpdate () 
 	{
+        if (Input.GetKey(KeyCode.F))
+        {
+            players_lighting.SetActive(true);
+        }
+        else
+        {
+            players_lighting.SetActive(false);
+        }
+
         if (Input.GetKey(KeyCode.LeftShift))
         {
             anim.speed = 2;
