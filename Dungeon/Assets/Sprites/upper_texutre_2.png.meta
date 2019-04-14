@@ -3,6 +3,7 @@ guid: a2aa75f21679f4b1cb34b9be864b8b6f
 TextureImporter:
   fileIDToRecycleName:
     21300000: upper_texutre_2_0
+    21300002: upper_texutre_2_1
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -100,6 +101,26 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: d476ab5d8abae48c9afe34c9c3c7b98c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upper_texutre_2_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4e4d7dca563e86468a66c0af558e868
       vertices: []
       indices: 
       edges: []
