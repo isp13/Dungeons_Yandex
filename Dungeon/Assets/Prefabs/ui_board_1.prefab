@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7524838879009804064}
   - component: {fileID: 7524838879009804071}
   - component: {fileID: 7524838879009804066}
+  - component: {fileID: 4464603709232500802}
   m_Layer: 0
   m_Name: ui_board_1
   m_TagString: Untagged
@@ -55,7 +56,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 903c7352dda7d41cbad8ce92fb3fa8b5, type: 2}
+  - {fileID: 2100000, guid: 78add833d2f9d4a7c806b520a60ed176, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -125,3 +126,26 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   _parallaxLight: 0
+--- !u!114 &4464603709232500802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7524838879009804070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f7b15544ddfa4e49b82852d600f44d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _verts:
+  - {x: 0.15421559, y: 0.08370679}
+  - {x: 0.14988744, y: -0.09426199}
+  - {x: -0.14925462, y: -0.09426199}
+  - {x: -0.14883271, y: 0.08296807}
+  _looped: 1
+  _shadowLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  _lightPenetration: 2.2
+  _opacity: 0.5
